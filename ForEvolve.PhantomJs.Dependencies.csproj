@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>ForEvolve Framework PhantomJs dependencies</Product>
+    <RepositoryUrl>https://github.com/ForEvolve/ForEvolve.PhantomJs.Dependencies</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>True</IsPackable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>Carl-Hugo Marcotte</Authors>
+    <Company>ForEvolve</Company>
+    <PackageProjectUrl>https://github.com/ForEvolve/ForEvolve.PhantomJs.Dependencies</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ForEvolve/ForEvolve.PhantomJs.Dependencies/blob/master/LICENSE</PackageLicenseUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <IncludeSource>False</IncludeSource>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
+    <Description>This package contains `PhantomJs` executable files. The `ForEvolve.Pdf` package is also required. See `ForEvolve.Pdf` for more information.</Description>
+    <PackageTags>forevolve,html,pdf,PhantomJs,dependencies,aspnetcore,asp.net,core,aspnet,asp</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="PhantomJs\Root\linux64_phantomjs.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="PhantomJs\Root\osx_phantomjs.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="PhantomJs\Root\windows_phantomjs.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+  </ItemGroup>
+
+</Project>
